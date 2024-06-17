@@ -480,102 +480,6 @@ h6 {
   position: relative;
 }
 
-.footer .footer-newsletter {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
-  border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
-  border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
-  padding: 50px 0;
-}
-
-.footer .footer-newsletter h4 {
-  font-size: 24px;
-}
-
-.footer .footer-newsletter .newsletter-form {
-  margin-top: 30px;
-  padding: 6px 8px;
-  position: relative;
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  box-shadow: 0px 2px 25px color-mix(in srgb, var(--default-color), transparent 95%);
-  display: flex;
-  transition: 0.3s;
-  border-radius: 4px;
-}
-
-.footer .footer-newsletter .newsletter-form:focus-within {
-  border-color: var(--accent-color);
-}
-
-.footer .footer-newsletter .newsletter-form input[type=email] {
-  border: 0;
-  padding: 4px;
-  width: 100%;
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  color: var(--default-color);
-}
-
-.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
-  outline: none;
-}
-
-.footer .footer-newsletter .newsletter-form input[type=submit] {
-  border: 0;
-  font-size: 16px;
-  padding: 0 20px;
-  margin: -7px -8px -7px 0;
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  transition: 0.3s;
-  border-radius: 0 4px 4px 0;
-}
-
-.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-}
-
-.footer .footer-newsletter .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-top: 10px;
-  font-weight: 600;
-  border-radius: 4px;
-}
-
-.footer .footer-newsletter .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-top: 10px;
-  font-weight: 600;
-  border-radius: 4px;
-}
-
-.footer .footer-newsletter .loading {
-  display: none;
-  background: var(--background-color);
-  text-align: center;
-  padding: 15px;
-  margin-top: 10px;
-}
-
-.footer .footer-newsletter .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--background-color);
-  animation: subscription-loading 1s linear infinite;
-}
-
 @keyframes subscription-loading {
   0% {
     transform: rotate(0deg);
@@ -1440,6 +1344,109 @@ section,
   transform: rotate(90deg);
   color: var(--accent-color);
 }
+
+/*--------------------------------------------------------------
+# Newsletter Section
+--------------------------------------------------------------*/
+
+
+.newsletter {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
+  border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  padding: 50px 0;
+}
+
+.newsletter h4 {
+  font-size: 24px;
+}
+
+.newsletter-form {
+  margin-top: 30px;
+  padding: 6px 8px;
+  position: relative;
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0px 2px 25px color-mix(in srgb, var(--default-color), transparent 95%);
+  display: flex;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.newsletter-form:focus-within {
+  border-color: var(--accent-color);
+}
+
+.newsletter-form input[type=email] {
+  border: 0;
+  padding: 4px;
+  width: 100%;
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  color: var(--default-color);
+}
+
+.newsletter-form input[type=email]:focus-visible {
+  outline: none;
+}
+
+.newsletter-form input[type=submit] {
+  border: 0;
+  font-size: 16px;
+  padding: 0 20px;
+  margin: -7px -8px -7px 0;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+}
+
+.newsletter-form input[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.error-message {
+  display: none;
+  background: #df1529;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  margin-top: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.sent-message {
+  display: none;
+  color: #ffffff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.loading {
+  display: none;
+  background: var(--background-color);
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--accent-color);
+  border-top-color: var(--background-color);
+  animation: subscription-loading 1s linear infinite;
+}
+
+
 
 /*--------------------------------------------------------------
 # Portfolio Section
