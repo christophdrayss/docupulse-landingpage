@@ -44,6 +44,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+html {
+  filter: saturate(1.1); /* Adjust the value to control the saturation */
+}
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -87,6 +92,10 @@ h6 {
 
 .img-borders{
   border-radius: 15px;
+}
+
+.add-in_logo_img{
+  filter: saturate(1.2);
 }
 
 /*--------------------------------------------------------------
