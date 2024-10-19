@@ -51,71 +51,29 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <!--<li><a href="#hero" class="active">Startseite<br></a></li>-->
-          <li><a href="#starter-video">Start</a></li>
-          <li><a href="#data-extraction">Extraktion</a></li>
-          <li><a href="#dataroom-overview">Datenübersicht</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#semantic-search">Semantic Search</a></li>
+          <li class="dropdown"><a href="#"><span>Features</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#starter-video">Cross-Referencing</a></li>
+              <li><a href="#data-extraction">Extraktion</a></li>
+              <li><a href="#dataroom-overview">Datenübersicht</a></li>
+              <li><a href="#semantic-search">Semantic Search</a></li>
+              <li><a href="#features">Besonderheiten</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Use Cases</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="./blog/duediligence.html">Due Diligence</a></li>
+              <li><a href="./blog/audit.html">Audit</a></li>
+              <li><a href="./blog/controlling.html">Controlling</a></li>
+            </ul>
+          </li>
           <li><a href="#pricing">Preise</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Kontakt</a></li>
-          <!--<li class="dropdown"><a href="#"><span>Mehr</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#features">Funktionen</a></li>
-              <li><a href="#testimonials">Kundenstimmen</a></li>
-              <li><a href="#contact">Kontakt</a></li>
-            </ul>
-          </li>-->
-          <!--<ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                  class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-          </ul>
-          </li>-->
-          <!--<li class="listing-dropdown"><a href="#"><span>Listing Dropdown</span> <i
-                class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li>
-                <a href="#">Column 1 link 1</a>
-                <a href="#">Column 1 link 2</a>
-                <a href="#">Column 1 link 3</a>
-              </li>
-              <li>
-                <a href="#">Column 2 link 1</a>
-                <a href="#">Column 2 link 2</a>
-                <a href="#">Column 3 link 3</a>
-              </li>
-              <li>
-                <a href="#">Column 3 link 1</a>
-                <a href="#">Column 3 link 2</a>
-                <a href="#">Column 3 link 3</a>
-              </li>
-              <li>
-                <a href="#">Column 4 link 1</a>
-                <a href="#">Column 4 link 2</a>
-                <a href="#">Column 4 link 3</a>
-              </li>
-              <li>
-                <a href="#">Column 5 link 1</a>
-                <a href="#">Column 5 link 2</a>
-                <a href="#">Column 5 link 3</a>
-              </li>
-            </ul>
-          </li>-->
+          
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted flex-md-shrink-0" href="starter-page.html">Als Beta-Tester registrieren</a>
-
     </div>
   </header>
 
@@ -130,7 +88,7 @@
             <h1 data-aos="fade-up">Optimierte Produktivität für Finance Professionals</h1>
             <p class="subhero" data-aos="fade-up" data-aos-delay="100">Sekundenschnelle Suche, Daten-Extraktion und Analyse von Dokumenten</p>
             <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
-              <a href="https://docs.docupulse.de/" class="btn-get-started">Zur Dokumentation <i class="bi bi-arrow-right"></i></a>
+              <a href="starter-page.html" class="btn-get-started">Beta-Tester Registrierung<i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
           <div class="col-lg-8 order-1 order-lg-2 hero-img" data-aos="zoom-out">
@@ -139,10 +97,10 @@
         </div>
     
         <!-- Second Row: Video Section (Below the Text and Image) -->
-        <div class="row gy-4 mt-5">
+        <div id="starter-video" class="row gy-4 mt-5">
           <div class="col-lg-12">
             <div class="video-container" data-aos="fade-up" data-aos-delay="300">
-              <video width="100%" controls autoplay muted loop>
+              <video style="filter: saturate(0.7)" width="100%" controls autoplay muted loop>
                 <source src="assets/video/Docupulse_SaaS_small.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
@@ -156,7 +114,7 @@
 
 
         <!-- Services Section -->
-        <section id="starter-video" class="services section">
+        <section id="starter-gif" class="services section">
           <!-- Section Title -->
           <div class="container section-title" data-aos="fade-up">
             <h1>Dokumentation verknüpft an Zahlen</h1>
@@ -231,9 +189,51 @@
     </section><!-- /Hero Section -->
 
     <!-- Alt Features Section -->
+    <section id="semantic-search" class="alt-features section">
+      <div class="container section-title" data-aos="fade-up">
+        <label class="custom-label">Expert Version</label>
+        <h1>High-Performance Semantic Search</h1>
+        <h4>Suchen Sie, was relevant ist</h4>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-xl-6 d-flex order-2 order-xl-1" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="row align-self-center gy-5">
+
+              <div class="col-md-12 icon-box">
+                <p>Erstellen Sie mehrere Abfragen ("<b>Queries</b>"), um verschiedene Aspekte tausender Dokumente in Sekunden zu
+                  durchsuchen. Diese Funktion ermöglicht es, komplexe Suchanforderungen zu bewältigen und alle
+                  relevanten Informationen in einem Durchgang zu finden.<br>
+
+                  <br><br>
+
+                  <b>Übersichtliche Darstellung in Excel</b>: Alle relevanten Suchergebnisse werden durch AI
+                  zusammengefasst, ausgewertet und in Excel dargestellt. Diese nahtlose Integration ermöglicht eine
+                  klare Übersicht und erleichtert die Weiterverarbeitung.
+                </p><br>
+              </div><!-- End Feature Item -->
+            </div>
+
+          </div>
+
+          <div class="col-xl-6 d-flex align-items-center order-1 order-xl-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/presentation2.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Alt Features Section -->
+
+    <!-- Alt Features Section -->
     <section id="features" class="alt-features section">
       <div class="container section-title" data-aos="fade-up">
-        <h1>Features</h1>
+        <h1>Besonderheiten</h1>
         <h4>Entdecken Sie die leistungsstarken und individualisierbare Funktionen</h4>
       </div><!-- End Section Title -->
 
@@ -310,49 +310,6 @@
       </div>
 
     </section><!-- /Alt Features Section -->
-
-    <!-- Alt Features Section -->
-    <section id="semantic-search" class="alt-features section">
-      <div class="container section-title" data-aos="fade-up">
-        <label class="custom-label">Expert Version</label>
-        <h1>High-Performance Semantic Search</h1>
-        <h4>Suchen Sie, was relevant ist</h4>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-xl-6 d-flex order-2 order-xl-1" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="row align-self-center gy-5">
-
-              <div class="col-md-12 icon-box">
-                <p>Erstellen Sie mehrere Abfragen ("<b>Queries</b>"), um verschiedene Aspekte tausender Dokumente in Sekunden zu
-                  durchsuchen. Diese Funktion ermöglicht es, komplexe Suchanforderungen zu bewältigen und alle
-                  relevanten Informationen in einem Durchgang zu finden.<br>
-
-                  <br><br>
-
-                  <b>Übersichtliche Darstellung in Excel</b>: Alle relevanten Suchergebnisse werden durch AI
-                  zusammengefasst, ausgewertet und in Excel dargestellt. Diese nahtlose Integration ermöglicht eine
-                  klare Übersicht und erleichtert die Weiterverarbeitung.
-                </p><br>
-              </div><!-- End Feature Item -->
-            </div>
-
-          </div>
-
-          <div class="col-xl-6 d-flex align-items-center order-1 order-xl-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/presentation2.png" class="img-fluid" alt="">
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Alt Features Section -->
-
 
     <!-- Pricing Section -->
     <section id="pricing" class="pricing section">
