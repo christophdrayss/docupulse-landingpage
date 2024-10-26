@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "www.docupulse.de",
+  "Id": "2f8a5829-2a31-4138-ac7c-2070c809acda"
+}
